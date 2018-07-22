@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="maio_check" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="maio 広告テスト" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GMV-WM-Hll">
+                                <rect key="frame" x="15" y="35" width="345" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="IAd-mD-1Lz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dBG-fl-2rr">
+                                <rect key="frame" x="15" y="626" width="345" height="17"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Fzn-aP-XYA">
+                                <rect key="frame" x="6" y="114" width="361" height="494"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="N2v-Zv-ixa">
+                                <rect key="frame" x="6" y="85.5" width="33.5" height="20.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M6o-f1-7MR">
+                                        <rect key="frame" x="0.0" y="0.0" width="33.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgJ-5x-M3N">
+                                <rect key="frame" x="292" y="79" width="68" height="29"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
+                                <state key="normal" title="広告表示"/>
+                                <connections>
+                                    <action selector="onOpenAd:" destination="BYZ-38-t0r" eventType="touchDown" id="e7r-uN-wEb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tNK-vU-7OI">
+                                <rect key="frame" x="229" y="79" width="47" height="30"/>
+                                <state key="normal" title="Reload"/>
+                                <connections>
+                                    <action selector="reloadTap:" destination="BYZ-38-t0r" eventType="touchDown" id="TVP-gj-X9N"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tNK-vU-7OI" firstAttribute="top" secondItem="GMV-WM-Hll" secondAttribute="bottom" constant="4" id="1ux-7D-0bg"/>
+                            <constraint firstItem="GMV-WM-Hll" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="5fH-ho-a05"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dBG-fl-2rr" secondAttribute="bottom" constant="24" id="BUc-Dt-UAE"/>
+                            <constraint firstItem="Fzn-aP-XYA" firstAttribute="leading" secondItem="N2v-Zv-ixa" secondAttribute="leading" id="DUj-fb-7Qt"/>
+                            <constraint firstItem="dgJ-5x-M3N" firstAttribute="leading" secondItem="tNK-vU-7OI" secondAttribute="trailing" constant="16" id="Lz7-0q-QvJ"/>
+                            <constraint firstItem="dBG-fl-2rr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="Psk-aJ-KyZ"/>
+                            <constraint firstItem="Fzn-aP-XYA" firstAttribute="top" secondItem="dgJ-5x-M3N" secondAttribute="bottom" constant="6" id="Y4u-f5-qhH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GMV-WM-Hll" secondAttribute="trailing" constant="15" id="awy-B4-wKe"/>
+                            <constraint firstItem="GMV-WM-Hll" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="c4r-oc-J2E"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dBG-fl-2rr" secondAttribute="trailing" constant="15" id="kYs-f8-Enx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Fzn-aP-XYA" secondAttribute="trailing" constant="8" id="km5-rs-eR1"/>
+                            <constraint firstItem="dgJ-5x-M3N" firstAttribute="top" secondItem="GMV-WM-Hll" secondAttribute="bottom" constant="4" id="nUt-kb-tkK"/>
+                            <constraint firstItem="Fzn-aP-XYA" firstAttribute="top" secondItem="N2v-Zv-ixa" secondAttribute="bottom" constant="8" symbolic="YES" id="pY4-x8-GnN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dgJ-5x-M3N" secondAttribute="trailing" constant="15" id="pab-5w-0mh"/>
+                            <constraint firstItem="dBG-fl-2rr" firstAttribute="top" secondItem="Fzn-aP-XYA" secondAttribute="bottom" constant="18" id="rnz-pP-hgj"/>
+                            <constraint firstItem="Fzn-aP-XYA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="6" id="wTO-H8-rxl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="adShowButton" destination="dgJ-5x-M3N" id="Yla-WP-wiD"/>
+                        <outlet property="logWindow" destination="Fzn-aP-XYA" id="Hfg-rH-OSb"/>
+                        <outlet property="statusLabel" destination="dBG-fl-2rr" id="7HR-7R-kaZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+</document>
